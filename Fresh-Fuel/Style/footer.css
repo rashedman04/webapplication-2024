@@ -1,0 +1,70 @@
+footer {
+  background-color: #2f5f21;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  margin-top: 50px;
+  gap: 50px;
+  padding: 20px 50px;
+}
+
+.socialCard {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.social {
+  height: 50px;
+  width: 50px;
+  background-color: #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+.facebook:hover {
+  background-color: #1877f2;
+  transition-duration: 0.4s;
+  transform: scale(1.1);
+}
+.instagram:hover {
+  background-color: #cc39a4;
+  transition-duration: 0.4s;
+  transform: scale(1.1);
+}
+.twitter:hover {
+  background-color: #2a2d32;
+  transition-duration: 0.4s;
+  transform: scale(1.1);
+}
+.footer-bottom {
+  align-self: self-end;
+  color: #f3f3f3;
+}
+p a {
+  color: #f3f3f3;
+}
+
+@media (max-width: 500px) {
+  footer {
+    padding: 20px 5px;
+    gap: 20px;
+  }
+  .socialCard {
+    gap: 5px;
+  }
+  .social {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-bottom {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,39 @@
+.about {
+  font-size: 1.5rem;
+  width: 80%;
+  max-width: 1000px;
+  margin: 100px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+
+.about p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.about span {
+  color: #a1153f;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    width: 90%;
+  }
+}

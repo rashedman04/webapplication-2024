@@ -1,0 +1,102 @@
+.logInContainer {
+  height: 800px;
+  width: 100;
+}
+.logInContainer img {
+  text-align: center;
+  height: 150px;
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logInContainer h1 {
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+.logIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  gap: 10px;
+  font-size: 10;
+}
+.logIn label {
+  font-weight: 600;
+  font-size: 15pt;
+}
+
+/* CSS */
+.button {
+  background-color: #2f5f21;
+  color: #f3f3f3;
+  border-radius: 8px;
+  border-style: none;
+  cursor: pointer;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  padding: 10px 16px;
+  text-align: center;
+  transition: color 100ms;
+  touch-action: manipulation;
+  font-size: 15pt;
+}
+#email,
+#password {
+  width: 300px;
+  height: 30px;
+  border-radius: 4px;
+}
+.button:hover,
+.button:focus {
+  opacity: 0.7;
+}
+.inputArea {
+  position: relative;
+  width: 300px;
+}
+.inputArea input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+  border: 1px solid rgb(243, 243, 243, 0.2);
+  border-radius: 5px;
+  outline: none;
+  color: ;
+  font-size: 1em;
+}
+.inputArea span {
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+  pointer-events: none;
+  padding-left: 10px;
+  color: black;
+  text-transform: uppercase;
+}
+.inputArea input:valid ~ span,
+.inputArea input:focus ~ span {
+  color: #2f5f21;
+  transform: translateX(7px) translateY(-10px);
+  font-size: 0.6em;
+  background: #f3f3f3;
+  border-left: 1px solid #2f5f21;
+  border-right: 1px solid #2f5f21;
+  padding: 0 10px;
+  letter-spacing: 0.15em;
+}
+.inputArea input:valid,
+.inputArea input:focus {
+  border: 1px solid #2f5f21;
+}
+.inputArea:nth-child(2) input:valid ~ span,
+.inputArea:nth-child(2) input:focus ~ span {
+  background-color: #2f5f21;
+  color: white;
+}

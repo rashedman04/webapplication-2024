@@ -1,0 +1,152 @@
+nav {
+  width: 100%;
+  height: auto;
+  background: #2f5f21;
+}
+label.logo {
+  line-height: 80px;
+  padding: 0 40px;
+  font-size: x-large;
+  color: white;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  list-style: none;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px 5px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: large;
+  padding: 7px 13 px;
+  border-radius: 4px;
+}
+nav ul a.active,
+nav ul a:hover,
+.categoryBtn:hover {
+  background: #2f5f21;
+  opacity: 0.3;
+}
+.checkbtn {
+  color: #f3f3f3;
+  font-size: 30px;
+  float: right;
+  margin-right: 30px;
+  line-height: 80px;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media screen and (max-width: 956px) {
+  label.logo {
+    font-size: large;
+    padding-left: 30px;
+  }
+  nav ul li a {
+    font-size: medium;
+  }
+}
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #2f5f21;
+  min-width: 150px;
+
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdownContent li {
+  display: block;
+  float: none;
+  padding: 0 0;
+  margin: 0 0;
+  height: 60px;
+}
+.dropdownContent li a {
+  padding: 0px 15px;
+}
+.categoryBtn {
+  background: none;
+  color: white;
+  border: 0;
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+img {
+  height: 80px;
+}
+
+@media screen and (max-width: 858px) {
+  .mainDel {
+    display: none;
+  }
+  .footerDel {
+    position: absolute;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+  .home img {
+    height: 150px;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    background: #6ea251;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.6s;
+  }
+  .dropdown {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .dropdownContent {
+    position: absolute;
+    width: 100%;
+    padding: 0 15%;
+    height: auto;
+    background: #2f5f21;
+    left: -100%;
+    text-align: center;
+    transition: all 0.6s;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a,
+  .categoryBtn {
+    font-size: large;
+    font-weight: bold;
+  }
+  nav ul li a.active,
+  nav ul li a:hover,
+  .categoryBtn:hover {
+    background: none;
+    color: darkgreen;
+  }
+
+  #check:checked ~ .menu,
+  .dropdownContent {
+    left: 0;
+  }
+  .dropdownContent a:hover,
+  .dropdown a.active {
+    background: none;
+    color: #6ea251;
+  }
+}

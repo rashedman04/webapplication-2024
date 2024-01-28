@@ -1,0 +1,157 @@
+.itemsContainer {
+  /* border: 5px solid black; */
+  width: 90vw;
+  text-align: center;
+  margin: 0 5vw;
+  margin-top: 59px;
+  margin-bottom: 125px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background: #f3f3f3;
+  height: auto;
+  gap: 5px;
+  row-gap: 25px;
+  padding: 10px 0px;
+}
+.item {
+  background: #f3f3f3;
+  flex-basis: 32%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid black; */
+}
+
+h4.info {
+  padding-top: 20px;
+  font-size: 2rem;
+}
+.subHeader {
+  margin: 20px 5vw;
+  /* border: 1px solid black; */
+  padding: 10px 10px 30px 15px;
+  background-color: #f3f3f3;
+}
+h1 {
+  color: #a1153f;
+}
+.card {
+  width: 81%;
+  height: 72%;
+  perspective: 1000px;
+  margin: 0 9%;
+}
+.cardInner {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.cardFront {
+  transform: rotateY(0deg);
+}
+.cardFront img {
+  width: 100%;
+  height: 100%;
+}
+.cardBack {
+  transform: rotateY(180deg);
+  text-align: left;
+  padding: 30px 6px 0 10px;
+}
+.card:hover .cardInner {
+  transform: rotateY(180deg);
+}
+.cardBack h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.cardBack h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #2f5f21;
+  margin-top: 30px;
+}
+.cardBack ul {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #a1153f;
+  margin-top: 20px;
+}
+input.add {
+  background-color: #2f5f21;
+  padding-top: 5px;
+  padding: 10px;
+  border: 2px solid rgb(47, 95, 33, 0.3);
+  color: #f3f3f3;
+  font-weight: 600;
+  border-radius: 7px;
+  font-size: 1rem;
+  transition: 0.5s;
+  margin: 5px 0 10px;
+}
+input.add:hover {
+  background-color: #f3f3f3;
+
+  color: #2f5f21;
+  font-weight: 600;
+  border-radius: 7px;
+  scale: 1.1;
+}
+input.add {
+  background-color: #2f5f21;
+  padding-top: 5px;
+  padding: 10px;
+  border: 2px solid rgb(47, 95, 33, 0.3);
+  color: #f3f3f3;
+  font-weight: 600;
+  border-radius: 7px;
+  font-size: 1rem;
+  transition: 0.5s;
+  margin: 5px 0 10px;
+}
+input.add:hover {
+  background-color: #f3f3f3;
+
+  color: #2f5f21;
+  font-weight: 600;
+  border-radius: 7px;
+  scale: 1.1;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .cardInner {
+    height: 450px;
+  }
+  .item {
+    flex-basis: 48%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .cardInner {
+    height: 400px;
+  }
+  .item {
+    flex-basis: 98%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cardInner {
+    height: 300px;
+  }
+  .item {
+    flex-basis: 98%;
+  }
+}

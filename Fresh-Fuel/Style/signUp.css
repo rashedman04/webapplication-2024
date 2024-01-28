@@ -1,0 +1,121 @@
+.signUpContainer {
+  height: 800px;
+  width: 100;
+}
+.signUpContainer img {
+  text-align: center;
+  height: 150px;
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.signUpContainer h1 {
+  display: block;
+  margin-bottom: 20px;
+  margin: 60px 30px;
+}
+.signUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin: 50px 40px;
+  gap: 30px;
+  font-size: 10;
+}
+
+/* CSS */
+.button {
+  background-color: #2f5f21;
+  color: #f3f3f3;
+  border-radius: 8px;
+  border-style: none;
+  cursor: pointer;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  padding: 10px 16px;
+  text-align: center;
+  transition: color 100ms;
+  touch-action: manipulation;
+  font-size: 15pt;
+  width: 200px;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.7;
+}
+.inputArea {
+  position: relative;
+  width: 300px;
+}
+.inputArea input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+  border: 1px solid rgb(243, 243, 243, 0.2);
+  border-radius: 5px;
+  outline: none;
+  color: ;
+  font-size: 1em;
+}
+.inputArea span {
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+  pointer-events: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.inputArea input:valid ~ span,
+.inputArea input:focus ~ span {
+  color: #2f5f21;
+  transform: translateX(7px) translateY(-10px);
+  font-size: 0.6em;
+  background: #f3f3f3;
+  border-left: 1px solid #2f5f21;
+  border-right: 1px solid #2f5f21;
+  padding: 0 10px;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+}
+.inputArea input:valid,
+.inputArea input:focus {
+  border: 1px solid #2f5f21;
+}
+.inputArea:nth-child(2) input:valid ~ span,
+.inputArea:nth-child(2) input:focus ~ span {
+  background-color: #2f5f21;
+  color: white;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.name .inputArea {
+  display: inline-block;
+  width: 30%;
+}
+.button {
+  align-self: center;
+  margin-top: 30px;
+}
+
+.member {
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+}
+.member a {
+  text-decoration: none;
+  color: #2f5f21;
+  font-weight: 600;
+}
